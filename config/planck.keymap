@@ -387,7 +387,7 @@
         layer_5 {
             bindings = <
                 &trans &tmn_riserpipe &tmn_wsgen  &tmn_wdgen  &pu          &pl          &kp TILDE  &kp KP_SLASH &kp PIPE      &kp BACKSLASH    &kp UNDER &none 
-                &trans &kp LA(A)      &trans      &tmn_s      &tmn_FHc     &di          &trans     &trans       &trans        &kp trans        &kp trans &none 
+                &trans &kp LA(A)      &trans      &tmn_s      &tmn_FHc     &di          &trans     &trans       &trans        &trans           &trans    &none 
                 &trans &kp C_AL_CALC  &xl         &tmn_valve  &tmn_sysgen  &tmn_FH      &to 0      &trans       &kp LESS_THAN &kp GREATER_THAN &trans    &none 
                 &trans &trans         &trans      &none       &none        &none        &none      &none        &none         &trans           &trans    &trans
                                                                      &none                    &none
