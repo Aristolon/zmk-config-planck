@@ -371,7 +371,7 @@
             bindings = <
                 &kp TAB      &kp Q        &kp W             &td2  &kp P &td1        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS         &kp KP_PLUS &kp BACKSPACE
                 &kp ESCAPE   &kp A        &kp R             &kp S &kp T &td0        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SLASH         &kp KP_ASTERISK &kp ENTER
-                &kp LSHIFT   &kp Z        &kp X             &kp C &kp V &td3        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp &kp LS(NUMBER_2) &kp UP_ARROW    &kp Q
+                &kp LSHIFT   &kp Z        &kp X             &kp C &kp V &td3        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(NUMBER_2)     &kp UP_ARROW    &kp Q
                 &kp LEFT_ALT &kp LEFT_GUI &kp LEFT_CONTROL  &mo 5 &none &none       &none            &none            &kp KP_DOT       &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW
                                                                    &kp SPACE                &kp KP_NUMBER_0
             >;
