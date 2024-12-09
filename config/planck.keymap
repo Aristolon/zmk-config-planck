@@ -359,7 +359,7 @@
                 &trans &kp TILDE    &kp LS(NUMBER_2) &kp LS(NUMBER_3) &kp LS(NUMBER_4) &kp LS(NUMBER_5)     &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(N8)    &kp MINUS     &kp EQUAL    &kp BACKSPACE
                 &trans &kp NUMBER_1 &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4     &kp NUMBER_5         &kp NUMBER_6      &kp NUMBER_7      &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0 &trans
                 &trans &kp GRAVE    &kp KP_SLASH     &kp PIPE         &kp BACKSLASH    &kp UNDER            &none             &none             &none         &none         &trans       &kp DELETE
-                &trans &trans       &trans           &mo 3            &none            &none                &none             none              &trans        &trans        &trans       &trans
+                &trans &trans       &trans           &mo 3            &none            &none                &none             &none             &trans        &trans        &trans       &trans
                                                                               &trans                                 &trans
             >;
         };
@@ -376,7 +376,7 @@
 
         layer_4 {
             bindings = <
-                &kp TAB      &kp Q        &kp W             &td2  &kp P &td1        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS         &kp KP_PLUS &kp BACKSPACE
+                &kp TAB      &kp Q        &kp W             &td2  &kp P &td1        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS         &kp KP_PLUS     &kp BACKSPACE
                 &kp ESCAPE   &kp A        &kp R             &kp S &kp T &td0        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SLASH         &kp KP_ASTERISK &kp ENTER
                 &kp LSHIFT   &kp Z        &kp X             &kp C &kp V &td3        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(NUMBER_2)     &kp UP_ARROW    &kp Q
                 &kp LEFT_ALT &kp LEFT_GUI &kp LEFT_CONTROL  &mo 5 &none &none       &none            &none            &kp KP_DOT       &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW
