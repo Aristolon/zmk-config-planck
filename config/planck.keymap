@@ -232,7 +232,7 @@
         
         cb_question {
             bindings = <&kp QMARK>;
-            key-positions = <44 45>;
+            key-positions = <32 >;
             layers = <0 6>;
             timeout-ms = <40>;
         };
@@ -336,11 +336,11 @@
 
         default_layer {
             bindings = <
-                &kp TAB      &kp Q        &kp W             &kp F &kp P &kp G           &kp J &kp L &kp U              &kp Y                 &kp SEMI       &kp BACKSPACE
-                &kp ESCAPE   &kp A        &kp R             &kp S &kp T &kp D           &kp H &kp N &kp E              &kp I                 &kp O          &kp PAGE_UP
-                &kp LSHIFT   &kp Z        &kp X             &kp C &kp V &kp B           &kp K &kp M &hm LEFT_GUI COMMA &hm RIGHT_CONTROL DOT &kp UP_ARROW   &hm RIGHT_SHIFT PAGE_DOWN
-                &kp LEFT_ALT &kp LEFT_GUI &kp LEFT_CONTROL  &mo 1 &none &none           &none &none &mo 2              &kp LEFT_ARROW        &kp DOWN_ARROW &kp RIGHT_ARROW
-                                                                    &kp SPACE           &kp ENTER
+                &kp TAB      &kp Q        &kp W             &kp F       &kp P   &kp G           &kp J       &kp L &kp U         &kp Y                 &kp SEMI       &kp BACKSPACE
+                &kp ESCAPE   &kp A        &kp R             &kp S       &kp T   &kp D           &kp H       &kp N &kp E         &kp I                 &kp O          &kp PAGE_UP
+                &kp LSHIFT   &kp Z        &kp X             &kp C       &kp V   &kp B           &kp K       &kp M &kp COMMA     &hm RIGHT_CONTROL DOT &kp UP_ARROW   &hm RIGHT_SHIFT PAGE_DOWN
+                &kp LEFT_ALT &kp LEFT_GUI &kp LEFT_CONTROL  &kp ESCAPE  &mo 1   &kp SPACE       &kp ENTER   &mo 2 &kp SLASH     &kp LEFT_ARROW        &kp DOWN_ARROW &kp RIGHT_ARROW
+                                                                           &kp SPACE                 &kp ENTER
             >;
         };
 
@@ -349,7 +349,7 @@
                 &trans       &kp LA(Q)     &kp LA(W)        &kp UP_ARROW   &kp LA(F)       &kp DELETE     &kp KP_NUMBER_7 &kp KP_NUMBER_8 &kp KP_NUMBER_9 &kp KP_MINUS     &kp KP_PLUS     &kp BACKSPACE
                 &trans       &kp LA(A)     &kp LEFT_ARROW   &kp DOWN_ARROW &kp RIGHT_ARROW &none          &kp KP_NUMBER_4 &kp KP_NUMBER_5 &kp KP_NUMBER_6 &kp KP_SLASH     &kp KP_ASTERISK &kp ENTER
                 &trans       &kp C_AL_CALC &none            &kp LC(LA(C))  &kp HOME        &kp END        &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3 &kp LS(NUMBER_2) &none           &kp Q
-                &kp LEFT_ALT &kp LEFT_GUI  &kp LEFT_CONTROL &none          &none           &none          &none           &none           &qtl 3 KP_DOT   &none            &none           &trans
+                &kp LEFT_ALT &kp LEFT_GUI  &kp LEFT_CONTROL &none          &trans          &trans         &kp KP_NUMBER_0 &mo 3           KP_DOT          &none            &none           &trans
                                                                                   &trans                    &kp KP_NUMBER_0
             >;
         };
@@ -358,8 +358,8 @@
             bindings = <
                 &trans &kp TILDE    &kp LS(NUMBER_2) &kp LS(NUMBER_3) &kp LS(NUMBER_4) &kp LS(NUMBER_5)     &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(N8)    &kp MINUS     &kp EQUAL    &kp BACKSPACE
                 &trans &kp NUMBER_1 &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4     &kp NUMBER_5         &kp NUMBER_6      &kp NUMBER_7      &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0 &trans
-                &trans &kp GRAVE    &kp KP_SLASH     &kp PIPE         &kp BACKSLASH    &kp UNDER            &none             &none             &none         &none         &trans       &kp DELETE
-                &trans &trans       &trans           &mo 3            &none            &none                &none             &none             &trans        &trans        &trans       &trans
+                &trans &kp GRAVE    &kp KP_SLASH     &kp PIPE         &kp BACKSLASH    &kp UNDER            &none             &none             &none         &none         &trans       &trans
+                &trans &trans       &trans           &mo 3            &none            &none                &none             &none             &trans        &trans        &trans       &kp DELETE
                                                                               &trans                                 &trans
             >;
         };
@@ -376,11 +376,11 @@
 
         layer_4 {
             bindings = <
-                &kp TAB      &kp Q        &kp W             &td2  &kp P &td1        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS         &kp KP_PLUS     &kp BACKSPACE
-                &kp ESCAPE   &kp A        &kp R             &kp S &kp T &td0        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SLASH         &kp KP_ASTERISK &kp ENTER
-                &kp LSHIFT   &kp Z        &kp X             &kp C &kp V &td3        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(NUMBER_2)     &kp UP_ARROW    &kp Q
-                &kp LEFT_ALT &kp LEFT_GUI &kp LEFT_CONTROL  &mo 5 &none &none       &none            &none            &kp KP_DOT       &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW
-                                                                   &kp SPACE                &kp KP_NUMBER_0
+                &kp TAB      &kp Q        &kp W             &td2        &kp P  &td1        &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS         &kp KP_PLUS     &kp BACKSPACE
+                &kp ESCAPE   &kp A        &kp R             &kp S       &kp T  &td0        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SLASH         &kp KP_ASTERISK &kp ENTER
+                &kp LSHIFT   &kp Z        &kp X             &kp C       &kp V  &td3        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(NUMBER_2)     &kp UP_ARROW    &kp Q
+                &kp LEFT_ALT &kp LEFT_GUI &kp LEFT_CONTROL  &kp ESCAPE  &mo 5  &kp SPACE   &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_DOT       &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW
+                                                                          &kp SPACE            &kp KP_NUMBER_0
             >;
         };
 
@@ -396,11 +396,11 @@
 
         layer_6 {
             bindings = <
-                &kp TAB      &kp Q        &kp W             &kp E &kp R &kp T           &kp Y &kp U &kp I      &kp O          &kp P          &kp BACKSPACE
-                &kp ESCAPE   &kp A        &kp S             &kp D &kp F &kp G           &kp H &kp J &kp K      &kp L          &kp SEMI       &kp PAGE_UP
-                &kp LSHIFT   &kp Z        &kp X             &kp C &kp V &kp B           &kp K &kp M &kp COMMA  &kp DOT        &kp UP_ARROW   &kp PAGE_DOWN
-                &kp LEFT_ALT &kp LEFT_GUI &kp LEFT_CONTROL  &mo 7 &none &none           &none &none &kp DELETE &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW
-                                                                   &kp SPACE               &kp ENTER
+                &kp TAB      &kp Q        &kp W             &kp E       &kp R   &kp T           &kp Y       &kp U       &kp I      &kp O          &kp P          &kp BACKSPACE
+                &kp ESCAPE   &kp A        &kp S             &kp D       &kp F   &kp G           &kp H       &kp J       &kp K      &kp L          &kp SEMI       &kp PAGE_UP
+                &kp LSHIFT   &kp Z        &kp X             &kp C       &kp V   &kp B           &kp K       &kp M       &kp COMMA  &kp DOT        &kp UP_ARROW   &kp PAGE_DOWN
+                &kp LEFT_ALT &kp LEFT_GUI &kp LEFT_CONTROL  &kp ESCAPE  &mo 7   &kp SPACE       &kp ENTER   &kp SLASH   &kp DELETE &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW
+                                                                            &kp SPACE              &kp ENTER
             >;
         };
 
