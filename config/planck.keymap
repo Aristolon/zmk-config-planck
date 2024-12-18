@@ -232,7 +232,7 @@
         
         cb_question {
             bindings = <&kp QMARK>;
-            key-positions = <32 >;
+            key-positions = <32 33>;
             layers = <0 6>;
             timeout-ms = <40>;
         };
