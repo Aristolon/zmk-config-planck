@@ -29,6 +29,7 @@
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
         diode-direction = "row2col";
+        wakeup-source;
 
         col-gpios
             = <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -52,5 +53,10 @@
             , <&pro_micro 5 GPIO_ACTIVE_HIGH>
             , <&pro_micro 0 GPIO_ACTIVE_HIGH>
             ;
+    };
+
+    soft_off_wakers {
+        compatible = "zmk,soft-off-wakeup-sources";
+        wakeup-sources = <&kscan0>;
     };
 };
