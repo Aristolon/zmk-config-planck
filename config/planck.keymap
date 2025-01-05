@@ -406,10 +406,10 @@
 
         layer_7 {
             bindings = <
-                &kp TAB      &kp NUMBER_1 &kp NUMBER_2     &trans            &kp NUMBER_3 &kp NUMBER_4       &kp F6 &kp F7 &none &none &none &none
-                &kp ESCAPE   &kp NUMBER_5 &trans           &trans            &trans       &kp NUMBER_6       &none  &none  &none &none &none &none
-                &kp LSHIFT   &kp NUMBER_7 &kp NUMBER_8     &kp NUMBER_9      &kp KP_MINUS &kp KP_PLUS        &to 0  &none  &none &none &none &none
-                &none        &kp LEFT_ALT &kp LEFT_GUI     &kp LEFT_CONTROL  &none        &none              &none  &none  &none &none &none &none
+                &kp NUMBER_7   &kp NUMBER_1 &trans           &kp NUMBER_2      &kp NUMBER_3 &kp NUMBER_4       &kp F6 &kp F7 &none &none &none &none
+                &kp NUMBER_8   &trans       &trans           &trans            &kp NUMBER_5 &kp NUMBER_6       &none  &none  &none &none &none &none
+                &kp NUMBER_9   &kp NUMBER_7 &kp NUMBER_8     &kp NUMBER_9      &kp KP_MINUS &kp KP_PLUS        &to 0  &none  &none &none &none &none
+                &none          &kp LEFT_ALT &kp LEFT_GUI     &kp LEFT_CONTROL  &none        &none              &none  &none  &none &none &none &none
                                                                                     &trans                      &trans
             >;
         };
