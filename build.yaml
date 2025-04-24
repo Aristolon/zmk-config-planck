@@ -20,3 +20,5 @@
 include:
   - board: nrfmicro_13
     shield: planck
+  - board: nrfmicro_13
+    shield: settings_reset
