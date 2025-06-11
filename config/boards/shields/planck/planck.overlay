@@ -75,16 +75,6 @@
         zmk,physical-layoust = &planck_layout;
     };
 
-    &planck_layout {
-        transform = <&default_transform>;
-        kscan = <&kscan0>;
-    };
-
-    zephyr_udc0: &usbd {
-        compatible = "nordic,nrf-usbd"; 
-        status = "okay"; 
-    };
-
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <12>;
