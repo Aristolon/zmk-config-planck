@@ -17,6 +17,7 @@
 #define layer_5       5
 #define layer_6       6
 #define layer_7       7
+#define layer_8       8
 
 / {
     behaviors {
@@ -360,7 +361,7 @@
                 &kp Q           &kp W           &kp F                       &kp P   &kp G                   &none &none         &kp J        &kp L     &kp U                   &kp Y                    &kp BACKSPACE
                 &kp A           &kp R           &kp S                       &kp T   &kp D                   &none &none         &kp H        &kp N     &kp E                   &kp I                    &kp O
                 &kp Z           &kp X           &kp C                       &kp V   &hm_l LEFT_SHIFT B      &none &none         &kp K        &kp M     &hm_r RIGHT_ALT COMMA   &hm_r RIGHT_CONTROL DOT  &hm_r RIGHT_SHIFT SLASH
-                &kp LEFT_ALT    &kp LEFT_GUI    &qt LEFT_CONTROL ESCAPE     &mo 1   &none                   &none &none         &none        &mo 2     &qt LEFT_GUI SEMI       &kp LEFT_ARROW           &kp RIGHT_ARROW
+                &kp LEFT_ALT    &kp LEFT_GUI    &qt LEFT_CONTROL ESCAPE     &mo 1   &kp SPACE               &none &none         &kp ENTER    &mo 2     &qt LEFT_GUI SEMI       &kp LEFT_ARROW           &kp RIGHT_ARROW
                                                                                               &kp SPACE                 &kp ENTER
             >;
         };
@@ -370,7 +371,7 @@
                 &kp LA(Q)       &kp LA(W)           &td4            &kp LA(F)        &kp DELETE       &none &none       &kp KP_NUMBER_7   &kp KP_NUMBER_8     &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_PLUS
                 &kp LA(A)       &kp LEFT_ARROW      &td5            &kp RIGHT_ARROW  &none            &none &none       &kp KP_NUMBER_4   &kp KP_NUMBER_5     &kp KP_NUMBER_6  &kp KP_SLASH  &kp KP_ASTERISK
                 &kp C_AL_CALC   &none               &kp LC(LA(C))   &none            &none            &none &none       &kp KP_NUMBER_1   &kp KP_NUMBER_2     &kp KP_NUMBER_3  &kp DELETE    &kp BACKSPACE
-                &trans          &trans              &trans          &trans           &none            &none &none       &none             &qtl 3 KP_NUMBER_0  &kp KP_DOT       &trans        &trans
+                &trans          &trans              &trans          &trans           &trans           &none &none       &kp ENTER         &qtl 3 KP_NUMBER_0  &kp KP_DOT       &trans        &trans
                                                                                             &trans                          &kp ENTER
             >;
         };
@@ -380,7 +381,7 @@
                 &kp TILDE       &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(NUMBER_5)     &none &none        &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(N8)    &kp MINUS     &kp EQUAL
                 &kp NUMBER_1    &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4       &kp NUMBER_5         &none &none        &kp NUMBER_6      &kp NUMBER_7      &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
                 &kp GRAVE       &kp KP_SLASH      &kp PIPE          &kp BACKSLASH      &kp UNDER            &none &none        &trans            &none             &none         &kp KP_DOT    &kp DELETE
-                &trans          &trans            &kp LEFT_CONTROL  &mo 3              &none                &none &none        &none             &trans            &trans        &trans        &trans
+                &trans          &trans            &kp LEFT_CONTROL  &mo 3              &kp SPACE            &none &none        &trans            &trans            &trans        &trans        &trans
                                                                               &kp SPACE                                 &trans
             >;
         };
@@ -400,8 +401,8 @@
                 &kp Q              &kp W      &td2                        &kp P   &td1           &none &none       &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS   &kp KP_PLUS
                 &kp A              &kp R      &kp S                       &kp T   &td0           &none &none       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SLASH   &kp KP_ASTERISK
                 &hm_l LEFT_SHIFT Z &kp X      &kp C                       &kp V   &td3      	 &none &none       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp DELETE     &kp BACKSPACE
-                &trans             &trans     &qt LEFT_CONTROL ESCAPE     &mo 5   &none          &none &none       &none            &kp KP_NUMBER_0  &kp KP_DOT       &trans         &trans
-                                                                                &kp SPACE            &kp ENTER
+                &trans             &trans     &qt LEFT_CONTROL ESCAPE     &mo 5   &qtl 8 SPACE   &none &none       &kp ENTER        &kp KP_NUMBER_0  &kp KP_DOT       &trans         &trans
+                                                                                        &kp SPACE            &kp ENTER
             >;
         };
 
@@ -410,7 +411,7 @@
                 &tmn_riserpipe    &tmn_wsgen  &tmn_wdgen  &pu          &pl          &none &none      &kp TILDE  &kp KP_SLASH     &kp PIPE        &kp BACKSLASH       &kp UNDER
                 &kp LA(A)         &trans      &tmn_s      &tmn_FHc     &di          &none &none      &trans     &trans           &trans          &kp LS(NUMBER_2)    &kp Q
                 &kp C_AL_CALC     &xl         &tmn_valve  &tmn_sysgen  &tmn_FH      &none &none      &to 0      &trans           &kp LESS_THAN   &kp GREATER_THAN    &trans
-                &trans            &trans      &trans      &trans       &none        &none &none      &none      &trans           &trans          &trans              &trans
+                &trans            &trans      &trans      &trans       &trans       &none &none      &trans     &trans           &trans          &trans              &trans
                                                                             &trans              &trans
             >;
         };
@@ -420,7 +421,7 @@
                 &kp TAB   &kp Q           &kp UP_ARROW              &kp E               &kp R          &none &none          &kp Y       &kp U            &kp I          &kp O    &kp P      
                 &kp A     &kp LEFT_ARROW  &kp DOWN_ARROW            &kp RIGHT_ARROW     &kp F          &none &none          &kp H       &kp J            &kp K          &kp L    &kp SEMI
                 &kp Z     &kp X           &kp C                     &kp V               &kp TILDE      &none &none          &kp N       &kp M            &kp COMMA      &kp DOT  &kp SLASH
-                &trans    &trans          &hm_l LEFT_SHIFT ESCAPE   &mo 7               &none          &none &none          &none       &kp RIGHT_ALT    &kp BACKSPACE  &trans   &trans
+                &trans    &trans          &hm_l LEFT_SHIFT ESCAPE   &mo 7               &kp SPACE      &none &none          &kp ENTER   &kp RIGHT_ALT    &kp BACKSPACE  &trans   &trans
                                                                             &kp SPACE                           &kp ENTER
             >;
         };
@@ -430,8 +431,17 @@
                 &kp NUMBER_1    &kp NUMBER_2     &trans         &kp NUMBER_3   &kp NUMBER_4          &none &none          &kp F6  &kp F7  &none  &kp MINUS   &kp EQUAL
                 &kp NUMBER_5    &trans           &trans         &trans         &kp NUMBER_6          &none &none          &none   &none   &none  &none       &none
                 &kp NUMBER_7    &kp NUMBER_8     &kp NUMBER_9   &kp NUMBER_0   &kp B                 &none &none          &to 0   &none   &none  &none       &none
-                &trans          &trans           &trans         &trans         &none                 &none &none          &none   &none   &none  &none       &none
+                &trans          &trans           &trans         &trans         &trans                &none &none          &trans  &none   &none  &none       &none
                                                                                     &trans                      &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+                &none    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9   &kp BACKSPACE                &kp F6  &kp F7  &none  &kp MINUS   &kp EQUAL
+                &none    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6   &none                        &none   &none   &none  &none       &none
+                &kp KP_NUMBER_0    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3   &kp KP_DOT         &to 0   &none   &none  &none       &none
+                                                             &trans  &trans  &trans                       &none   &none   &none
             >;
         };
     };
